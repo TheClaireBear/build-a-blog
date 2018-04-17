@@ -71,7 +71,7 @@ def newpost():
             return redirect('/blog?id='+ str(new_post.id))      
 
         
-    return render_template('new-post.html', page_title = "Add a Blog Post")
+    return render_template('new-post.html', title_error = title_error, body_error = body_error, page_title = "Add a Blog Post")
 
     
 
